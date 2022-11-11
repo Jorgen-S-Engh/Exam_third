@@ -12,11 +12,11 @@ async function createAccount (e){
     const loginEmail = document.querySelector(".login_email").value;
     const loginPassword = document.querySelector(".login_password").value;
     const loginAvatar = document.querySelector(".login_avatar").value;
-    const loginBanner = document.querySelector(".login_banner").value;
     const user = {
         name: loginName,
         email: loginEmail,
         password: loginPassword,
+        avatar: loginAvatar,
         
     };
     const apiData = {
@@ -42,6 +42,8 @@ async function createAccount (e){
             localStorage.clear()
             localStorage.setItem("password",loginPassword);
             localStorage.setItem("email", loginEmail);
+            localStorage.setItem("name", loginName);
+            localStorage.setItem("avatar", loginAvatar);
             setTimeout(() => {
                 window.location.href = "index.html"
               }, "2000")
