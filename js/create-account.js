@@ -34,7 +34,6 @@ async function createAccount (e){
             },
             body: JSON.stringify(user)
         })
-        console.log(response)
         const data = await response.json();
         if (response.status === 200 || response.status === 201){
             successMessage.classList.remove("success_hidden")
@@ -42,8 +41,6 @@ async function createAccount (e){
             localStorage.clear()
             localStorage.setItem("password",loginPassword);
             localStorage.setItem("email", loginEmail);
-            localStorage.setItem("name", loginName);
-            localStorage.setItem("avatar", loginAvatar);
             setTimeout(() => {
                 window.location.href = "index.html"
               }, "2000")
