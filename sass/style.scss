@@ -38,11 +38,12 @@ ul {
     border-radius: 50%;
     border: solid 2px white;
     object-fit: cover;
-    transition: border 1000ms ease-out;
+    transition: border 300ms ease-out;
 }
 
+//not working
 .profile-img-small:hover {
-    border: 2px solid black;
+    border-color: linear-gradient(to right, red, purple)
 }
 
 .btn-logout {
@@ -59,6 +60,26 @@ ul {
     object-fit: contain;
     height: 200px;
     width: 200px;
+}
+
+
+.module-border-wrap {
+    max-width: 250px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+}
+
+.module {
+    background: #222;
+    color: white;
+    padding: 2rem;
+}
+
+body {
+    background-color: #222;
+
 }
 
 
