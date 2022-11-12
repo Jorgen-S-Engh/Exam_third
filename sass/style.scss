@@ -28,14 +28,9 @@
     top: 25px;
 }
 
-
 ul {
     display: flex;
-
-
 }
-
-
 
 .profile-img-small {
     width: 50px;
@@ -50,7 +45,21 @@ ul {
     border: 2px solid black;
 }
 
+.btn-logout {
+    position: absolute;
+    right: 15px;
+}
 
+
+.header-name-container * {
+    color: $white;
+}
+
+.item-img {
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+}
 
 
 

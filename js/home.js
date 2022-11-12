@@ -2,10 +2,9 @@
 const profileName = document.querySelector(".header-name").innerHTML = `${localStorage.getItem("name")}`
 const profileImg = document.querySelector(".profile-img-small")
 
-async function setImg () {
+function setImg () {
     if (localStorage.getItem("avatar") !== ""){
         profileImg.src = localStorage.getItem("avatar");
-        console.log("inside if")
     }else{
         profileImg.src = "img/user-profile.png"
     } 
@@ -14,15 +13,13 @@ async function setImg () {
 setImg();
 
 
-console.log(localStorage.getItem("avatar") !== "")
+// ----------------------- Log out ----------------------
+const btnLogout = document.querySelector(".btn-logout")
+
+btnLogout.addEventListener("click", () =>{
+    localStorage.clear();
+    window.location = "index.html";
+})
 
 
-
-// profileImg.addEventListener("error", () =>{
-//   const defaultImage =
-//     "img/user-profile.png";
-
-//   img.src = defaultImage;
-//   img.alt = 'default';
-// });
 
