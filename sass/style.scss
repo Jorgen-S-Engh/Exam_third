@@ -46,10 +46,10 @@ ul {
     border-color: linear-gradient(to right, red, purple)
 }
 
-.btn-logout {
-    position: absolute;
-    right: 15px;
-}
+// .btn-logout {
+//     position: absolute;
+//     right: 15px;
+// }
 
 
 .header-name-container * {
@@ -67,7 +67,7 @@ ul {
     max-width: 250px;
     padding: 1rem;
     position: relative;
-    background: linear-gradient(to right, red, purple);
+    background: linear-gradient(to right, blue, green);
     padding: 3px;
 }
 
@@ -78,10 +78,48 @@ ul {
 }
 
 body {
-    background-color: #222;
+    // background-color: #222;
 
 }
 
+.hamburger-container {
+    height: 100%;
+    width: 200px;
+    background-color: red;
+    // position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.hamburger-menu * {
+    margin: 10px 0px;
+}
+
+.close-hamburger {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.close-hamburger-container {
+    display: none;
+}
+
+.hamburger-icon {
+    width: 25px;
+    right: 10px;
+    top: 25px;
+
+}
 
 
 @media only screen and (min-width: 500px) {}
