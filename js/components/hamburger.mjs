@@ -1,1 +1,6 @@
-const hamburerIcon = document.querySelector(".hamburger-icon")
+const hamburgerIcon = document.querySelector(".hamburger-icon")
+
+hamburgerIcon.addEventListener("click", ()=>{
+    hamburgerIcon.classList.add("")
+}
+)
