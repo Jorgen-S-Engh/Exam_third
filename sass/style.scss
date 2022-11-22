@@ -46,11 +46,6 @@ ul {
     border-color: linear-gradient(to right, red, purple)
 }
 
-// .btn-logout {
-//     position: absolute;
-//     right: 15px;
-// }
-
 
 .header-name-container * {
     color: $white;
@@ -78,7 +73,13 @@ ul {
 }
 
 body {
-    // background-color: #222;
+    // background-color: #1A1826;
+    background: linear-gradient(to right, #323859, #1A1826);
+
+}
+
+h1 {
+    color: #D9A384;
 
 }
 
@@ -119,6 +120,15 @@ body {
     right: 10px;
     top: 25px;
 
+}
+
+.frontpage-text {
+    color: #D9A384;
+}
+
+.btn {
+    color: white;
+    background-color: #323859;
 }
 
 
